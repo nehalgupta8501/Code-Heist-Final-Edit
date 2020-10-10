@@ -1,0 +1,75 @@
+
+*
+{ text-align: center; }
+
+
+.cool-h1
+{
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Luminari, fantasy;
+  font-size: 6.5rem;
+  font-weight: 500; 
+  overflow: hidden;
+  color: #d4e0f7;
+  background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
+  padding: 10px;
+  border-image: url(euro.jpg) 30 round;
+  border-width: 15px;
+    -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  border-color: rgba(8, 20, 43, 0);
+  text-shadow: 4px 4px 5px #d32323;
+  margin: 50px 75px 75px 100px;
+}
+
+img {
+  height:500px;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+  color: #f1f3f8;
+  font-size: large;
+}
+
+h5{
+  font-family: URW Chancery L, cursive;
+   text-align: center;
+   font-size: 1.9rem;
+   color: white;
+   text-shadow: 4px 4px 5px #d32323;
+
+}
+
+.bb {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #e91640;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.bb:hover {background-color: #3e8e41}
+
+.bb:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+p{
+    font-family: URW Chancery L, cursive;
+    text-align: center;
+    font-size: 1.9rem;
+    color: white;
+    text-shadow: 4px 4px 5px #d32323;
+}

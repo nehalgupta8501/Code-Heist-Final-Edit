@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Heist | Innerve 2020</title>  
+    <link rel="stylesheet" href="colors.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" type="text/css" href="slideshow.css" />
+    <link rel="stylesheet" type="text/css" href="toggleButton.css" />
+</head>
+ 
+<body>
+    
+    <audio id="track" loop="loop">
+        <source src="mainpage_audio.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div id="player-container">
+        <div id="play-pause" class="play">Play</div>
+    </div>
+   
+    <!----Page Content------>
+    <h1 class="cool-h1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Code Heist<br>Innerve 2020</h1>
+ 
+    <div class="row justify-content-center">
+     
+        <a class="animated-button1" onclick="openAbout()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            About
+        </a>
+
+        <a class="animated-button1" onclick="openInstructions()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Instructions
+        </a>
+
+        <a class="animated-button1" onclick="openLogin()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Login
+        </a>
+
+        <a class="animated-button1" onclick="openRewards()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Rewards
+        </a>
+
+    </div>
+<!----    <video width="320" height="240" controls>
+        <source src="mainpage_video.mp4" type=video/mp4>
+                <img src="mainpic.jpeg">
+    </video>------->
+    <br>
+
+    <div class="slideshowContainer">
+  
+        <!-- Replace the image 'src' with the images in your project.
+        Javascript is set up so that you can add as many images as you like, but make sure that you match the number of 'circle' span elements (below) to the number of images -->
+        <img class="imageSlides" src="mainpic.jpeg">
+        <img class="imageSlides" src="carItem2.jpeg">
+        <img class="imageSlides" src="carItem3.jpeg">
+        <img class="imageSlides" src="carItem4.jpeg">
+        <img class="imageSlides" src="carItem5.jpeg">
+        <img class="imageSlides" src="carItem6.jpeg">
+        <!-- I would recommend to replace these 'span' elements with 'img' files
+        for each the left and right arrow that fits your project, and size accordingly.
+        I've shown 'span' elements because I didn't want to upload files. -->
+        <span id ="leftArrow" class="slideshowArrow">&#8249;</span>
+        <span id ="rightArrow" class="slideshowArrow">&#8250;</span>
+  
+        <div class="slideshowCircles">
+        <!-- Filled 'dot' class is set to first image in slideshow, and then via Javascript the filled 'dot' class follows the current image.
+        Make sure you match the number of these 'circle' span elements to the number of images in your slideshow. -->
+            <span class="circle dot"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+  
+    </div>
+	
+    <footer>
+        <p>For the final time, let the heist begin</p>
+    </footer>
+    <script src="index.js"></script>
+  
+</body>
+
+</html>

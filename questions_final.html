@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="questions_final.css">
+  <link rel="stylesheet" href="animatedButton.css">
+  <title>Retrieve Data</title>
+</head>
+<style>
+  body {
+    background: linear-gradient(-60deg, #000000 50%, #800000 50%);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: white;
+    font-size: larger;
+    text-shadow: 4px 4px 5px #d32323;
+  }
+</style>
+<body>
+  <embed src="./lastmusic.mp3" autostart="true" loop="infinite" height="1" width="0"></embed>
+  <div class="container">
+    <div class="row card-panel">
+      <h1 class="center-align">Code Heist</h1>
+      <img style="float: left; margin: 0px 15px 15px 0px;" src="./beta.png" />
+    <img style="float: right; margin: 0px 15px 15px 0px;" src="./beta.png" />
+      <div id="game">
+        <h5 id="story" class="center-align"></h5>
+        <h4 id="question" class="center-align"></h4>
+        <label for="answer" id="label" > <b> Answer </b> </label>
+        <input type="text" id="answer-input" class="cool-input" name="answer">
+        <input id="answer-btn" class="animated-button1" type="submit" value="submit"></input>
+        <input id="next-btn" class="animated-button1" type="submit" value="Ready to dive in?" > </input>
+        <p id="message"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script defer src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script defer src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script defer src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+  <script defer src="./init-firebase.js"></script>
+  <script defer src="questions_final.js"></script>
+</body>
+</html>

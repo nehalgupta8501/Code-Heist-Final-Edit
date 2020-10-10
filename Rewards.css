@@ -1,0 +1,47 @@
+
+.cool-h1
+{
+  text-align: center;
+  text-transform: capitalize;
+  font-family: Luminari, fantasy;
+  font-size: 6.5rem;
+  font-weight: 500; 
+  overflow: hidden;
+  color: #d4e0f7;
+  background: linear-gradient(-30deg, #3d0b0b 50%, #2b0808 50%);
+  padding: 10px;
+  border-image: url(euro.jpg) 30 round;
+  border-width: 15px;
+    -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  border-color: rgba(8, 20, 43, 0);
+  text-shadow: 4px 4px 5px #d32323;
+  margin: 30px 75px 18px 75px;
+}
+
+
+img {
+  width: 170px;
+  height: 400px;
+  object-fit: cover;
+  padding: 50px;
+}
+.info{
+    text-align: center;
+    font-family: Palatino, URW Palladio L, serif;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.quote{
+    font-family: URW Chancery L, cursive;
+    text-align: center;
+    font-size: 1.9rem;
+    color: white;
+    text-shadow: 4px 4px 5px #d32323;
+}
+body{
+    background: black;
+}

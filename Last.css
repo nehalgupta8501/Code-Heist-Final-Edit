@@ -1,0 +1,31 @@
+body
+{  
+   background: url("falling1.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.box{
+    border: 10px solid #B71514;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-family: Apple Chancery, cursive;
+    box-align: center;
+    margin-top: 3rem;
+    margin-left: 17rem;
+    margin-right: 17rem;
+    box-sizing: border-box;
+    border-style: inset;
+    background-color: black;
+}
+h1{
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 5.5rem;
+    padding: 12px;
+    text-shadow: 4px 4px 5px #d32323;
+    color: white;
+}
+
