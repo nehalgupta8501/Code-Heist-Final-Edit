@@ -29,11 +29,11 @@ function openAbout(){
 }
 
 function openInstructions(){
-	window.location="instruction.html";
+	window.location="Instruction.html";
 }
 
 function openRewards(){
-	window.location="rewards.html";
+	window.location="Rewards.html";
 }
 
 function openLogin(){
