@@ -154,6 +154,7 @@ function printNextQuestion() {
         nextBtn.style.display = "none";
         answerBtn.style.display = "none";
         message.style.display = "none";
+        window.location.replace("Last.html");
       }
     });
   nextBtn.addEventListener("click", publishQuestion);
