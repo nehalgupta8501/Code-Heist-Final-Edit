@@ -270,6 +270,7 @@ function matchAnswer() {
 
 //Function to check answer
 function checkAnswer() {
+  updateTime();
   if (answerInput.value === "") {
     alert("The answer field is empty!");
   } else {
@@ -277,7 +278,21 @@ function checkAnswer() {
     setMessage("");
     answerInput.value = "";
     calculateCount().then(checkIfZeroGuesses).catch(matchAnswer);
+
   }
+}
+
+// Updates the time last answer was given at
+function updateTime() {
+ var currentdate = new Date(); 
+    var timenow = + currentdate.getHours() + ":"  
+            + currentdate.getMinutes() + ":" 
+            + currentdate.getSeconds();
+    //console.log("Current time is:", timenow);
+    var answeredAt = users.child(currentUserID);
+    answeredAt.update({
+      "lastAnswerAt": timenow 
+    });
 }
 
 function gameOver(msg) {
