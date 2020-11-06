@@ -287,11 +287,11 @@ function updateTime() {
  var currentdate = new Date(); 
     var timenow = + currentdate.getHours() + ":"  
             + currentdate.getMinutes() + ":" 
-            + currentdate.getSeconds();
-    //console.log("Current time is:", timenow);
-    var answeredAt = users.child(currentUserID);
+            + currentdate.getSeconds() + ":"
+            + currentdate.getMilliseconds();
+    var answeredAt = users.child(currentUserID).child("answer"+current_count);
     answeredAt.update({
-      "lastAnswerAt": timenow 
+        timenow 
     });
 }
 
