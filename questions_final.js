@@ -274,25 +274,28 @@ function checkAnswer() {
   if (answerInput.value === "") {
     alert("The answer field is empty!");
   } else {
-    answer = parseInt(answerInput.value.trim());
+    answer = answerInput.value.trim();
     setMessage("");
     answerInput.value = "";
     calculateCount().then(checkIfZeroGuesses).catch(matchAnswer);
-
   }
 }
 
 // Updates the time last answer was given at
 function updateTime() {
- var currentdate = new Date(); 
-    var timenow = + currentdate.getHours() + ":"  
-            + currentdate.getMinutes() + ":" 
-            + currentdate.getSeconds() + ":"
-            + currentdate.getMilliseconds();
-    var answeredAt = users.child(currentUserID).child("answer"+current_count);
-    answeredAt.update({
-        timenow 
-    });
+  var currentdate = new Date();
+  var timenow =
+    +currentdate.getHours() +
+    ":" +
+    currentdate.getMinutes() +
+    ":" +
+    currentdate.getSeconds() +
+    ":" +
+    currentdate.getMilliseconds();
+  var answeredAt = users.child(currentUserID).child("answer" + current_count);
+  answeredAt.update({
+    timenow,
+  });
 }
 
 function gameOver(msg) {
